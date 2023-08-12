@@ -29,13 +29,18 @@
   nav ul {
     display: flex;
     list-style: none;
+    justify-content: center;
+    margin: 1rem;
   }
   
   nav a {
     color: whitesmoke;
-    padding: 2rem;
+    padding: 0.5rem;
+    /* padding-right: 0.5rem; */
     text-decoration: none;
     font-weight: bolder;
+    text-align: center;
+    
   }
   
   /* Banner */
@@ -48,6 +53,7 @@
     width: 100%;
     height: 20em;
     margin-top: 0.1rem;
+    transition: transform 0.3s ease;
   }
   
   /* Main text */
@@ -101,13 +107,14 @@
   /* Links */
   a {
     display: inline-block; 
-    padding: 0.5rem 1rem; 
     border-radius: 20px; 
     margin-right: 1rem; 
-    background-color: #333; 
+    background-color: #084e20; 
     color: #fff; 
     text-decoration: none;
     transition: background-color 0.3s ease;
+    height: 2rem;
+    width: 10rem;
   }
   
   a:hover {
@@ -139,6 +146,10 @@
   .portfolio-item:hover img {
     transform: scale(1.1);
   }
+
+  .banner:hover img{
+    transform: scale(1.1);
+  }
   
   .portfolio-overlay {
     position: absolute;
@@ -154,6 +165,10 @@
   }
   
   .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+  }
+
+  .banner:hover .portfolio-overlay{
     opacity: 1;
   }
   
