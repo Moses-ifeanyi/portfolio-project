@@ -1,103 +1,105 @@
+/* Common styles */
 * {
-  padding: 0;
-  margin: 0;  
-}
-
-body{
+    padding: 0;
+    margin: 0;  
+  }
+  
+  body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-}
-
-header{
+  }
+  
+  /* Header */
+  header {
     background-color: rgb(4, 29, 4);
     color: whitesmoke;
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header img{
+  }
+  
+  header img {
     display: block;
     width: 5rem;
     height: 7rem;
     margin: auto;
-}
-nav ul{
+  }
+  
+  nav ul {
     display: flex;
     list-style: none;
-}
-nav a{
+  }
+  
+  nav a {
     color: whitesmoke;
     padding: 2rem;
     text-decoration: none;
     font-weight: bolder;
-}
-
-.banner{
+  }
+  
+  /* Banner */
+  .banner {
     background-color: aqua;
     width: 100%;
-}
-.banner img{
+  }
+  
+  .banner img {
     width: 100%;
     height: 20em;
     margin-top: 0.1rem;
-}
-
-.main-text{
+  }
+  
+  /* Main text */
+  .main-text {
     margin: 1rem;
-}
-.main-text h1{
+  }
+  
+  .main-text h1 {
     text-align: center;
     font-size: 2rem;
     color: #333;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
   
-}
-.main-text p{
+  .main-text p {
     font-size: 16px;
     color: #666;
-    line-height: 1.6;
-
-}
-
-.float-left{
+    line-height: 2.0;
+  }
+  
+  /* Float left */
+  .float-left {
     float: left;
     margin-right: 1rem;
     height: 15rem;
     width: 15rem;
     border-radius: 10%;
-}
-.portfolio{
+  }
+  
+  /* Footer */
+  footer {
     display: flex;
-    justify-content: center;
-    /* border: 4rem solid green; */
-    margin-top: 10rem;
-    gap: 3rem;
-}
-
-.portfolio-item{
-    width: 20rem; /* Set your desired width */
-    height: 20rem; /* Set your desired height */
-    background-color: #ccc; /* Just for illustration */
-}
-
-footer{
-    display: flex;
+    flex-wrap: wrap; /* To handle multiple rows on smaller screens */
     justify-content: center;
     margin-top: 5rem;
     padding: 2rem;
     background-color: rgb(1, 24, 1);
     gap: 3rem;
     color: whitesmoke;
-}
-.footer-logo img{
-  max-width: 3rem;
-}
-.copyright{
+  }
+  
+  .footer-logo img {
+    max-width: 3rem;
+  }
+  
+  /* Copyright */
+  .copyright {
     margin-top: 4rem;
-}
-a {
+  }
+  
+  /* Links */
+  a {
     display: inline-block; 
     padding: 0.5rem 1rem; 
     border-radius: 20px; 
@@ -109,6 +111,74 @@ a {
   }
   
   a:hover {
-    background-color: #555; /* Darken the background color on hover */
+    background-color: #555; 
   }
   
+  /* Portfolio */
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap; /* To handle multiple rows on smaller screens */
+    justify-content: center;
+    margin-top: 10rem;
+    gap: 1rem;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    width: 20rem;
+    height: 15rem;
+    overflow: hidden;
+  }
+  
+  .portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust header, footer, and other relevant styles for smaller screens */
+    header {
+      padding: 1rem 0;
+    }
+    
+    footer {
+      margin-top: 3rem;
+    }
+    
+    .portfolio,
+    footer {
+      gap: 1rem;
+    }
+    
+    /* Adjust font sizes and other styles as needed */
+    .main-text h1 {
+      font-size: 1.5rem;
+    }
+    
+    .main-text p {
+      font-size: 14px;
+    }
+  }
