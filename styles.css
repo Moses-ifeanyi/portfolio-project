@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;  
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header{
+    background-color: rgb(4, 29, 4);
+    color: whitesmoke;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    display: block;
+    width: 5rem;
+    height: 7rem;
+    margin: auto;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav a{
+    color: whitesmoke;
+    padding: 2rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.banner{
+    background-color: aqua;
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+    height: 20em;
+    margin-top: 0.1rem;
+}
+
+.main-text{
+    margin: 1rem;
+}
+.main-text h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  
+}
+.main-text p{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+
+}
+
+.float-left{
+    float: left;
+    margin-right: 1rem;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 10%;
+}
+.portfolio{
+    display: flex;
+    justify-content: center;
+    /* border: 4rem solid green; */
+    margin-top: 10rem;
+    gap: 3rem;
+}
+
+.portfolio-item{
+    width: 20rem; /* Set your desired width */
+    height: 20rem; /* Set your desired height */
+    background-color: #ccc; /* Just for illustration */
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: rgb(1, 24, 1);
+    gap: 3rem;
+    color: whitesmoke;
+}
+.footer-logo img{
+  max-width: 3rem;
+}
+.copyright{
+    margin-top: 4rem;
+}
+a {
+    display: inline-block; 
+    padding: 0.5rem 1rem; 
+    border-radius: 20px; 
+    margin-right: 1rem; 
+    background-color: #333; 
+    color: #fff; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #555; /* Darken the background color on hover */
+  }
+  
